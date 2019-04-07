@@ -1,3 +1,6 @@
+// Menu
+
+// Button click effects
 $( document ).ready(function() {
     $(".button").click(function() {
       
