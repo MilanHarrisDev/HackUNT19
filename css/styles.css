@@ -10,7 +10,7 @@
 }
 
 #caption {
-  position: absolute;
+  position: fixed;
   bottom: 5%;
   color: white;
   font-size: 14pt;
@@ -25,7 +25,7 @@
 }
 
 #buttons-container {
-  position: absolute;
+  position: fixed;
   z-index: 2;
   bottom: 10%;
   right: 10%;
@@ -35,13 +35,10 @@
 
 body {
   overflow: hidden;
-  
 }
 
 .overlay { 
-  position: fixed; 
   overflow-y: scroll;
-  top: 0; right: 0; bottom: 0; left: 0; 
 }
 
 .button {
