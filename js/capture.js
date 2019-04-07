@@ -4,7 +4,9 @@ function startup() {
   navigator.mediaDevices.getUserMedia({
     audio: false,
     video: true,
-    facingMode: "environment"
+    facingMode: { 
+      exact: 'environment'
+    }
   }).then(stream => {
     video.srcObject = stream;
   }).catch(console.error)
