@@ -11,26 +11,23 @@
 
 #caption {
   position: absolute;
+  left: 5%;
   bottom: 5%;
   color: white;
   font-size: 14pt;
   text-shadow: 2px 2px #000000;
   z-index: 1;
   align-content: center;
-  width: auto;
   margin-left: 10px;
-  margin-right: auto;
-  height: auto;
   text-align: center;
 }
 
 #buttons-container {
   position: absolute;
   z-index: 2;
-  bottom: 10%;
-  right: 10%;
+  bottom: 5%;
+  right: 5%;
   display: flex;
-  flex-direction: row;
 }
 
 body {
@@ -46,18 +43,22 @@ body {
 .button {
   background-color: #0000007a;
   color: white;
-  height: 20pt;
   font-size: 14pt;
-  outline-color: cyan;
-  outline-width: 3px;
   align-content: center;
-  width: auto;
+  
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin: 8px;
+  
   height: auto;
+
+  border: solid white 1pt;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+
   text-align: center;
   -webkit-user-select: none; /* Safari */        
   -moz-user-select: none; /* Firefox */
