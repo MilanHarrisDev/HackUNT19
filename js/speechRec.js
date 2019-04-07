@@ -3,7 +3,7 @@ window.SpeechRecognition = window.webkitSpeechRecognition || window.SpeechRecogn
 const recognition = new SpeechRecognition();
 var text = "";
 let languages = ['en', 'es'];
-let currentLanguage = 1;
+let currentLanguage = 0;
 
 const Http;
 
