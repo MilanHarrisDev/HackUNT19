@@ -3,7 +3,8 @@ const video = document.getElementById('video');
 function startup() {
   navigator.mediaDevices.getUserMedia({
     audio: false,
-    video: true
+    video: true,
+    facingMode: "environment"
   }).then(stream => {
     video.srcObject = stream;
   }).catch(console.error)
