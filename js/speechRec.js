@@ -5,7 +5,6 @@ var text = "";
 let languages = ['en', 'es'];
 let currentLanguage = 0;
 
-const Http;
 
 const translateUrl='https://translation.googleapis.com/language/translate/v2';
 
