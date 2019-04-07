@@ -14,8 +14,10 @@
 #caption {
   position: absolute;
   color: white;
-  text-shadow: 3px 3px #000000;
-  top: 0;
-  left: 0;
+  font-size: 24pt;
+  text-shadow: 2px 2px #000000;
   z-index: 1;
+  top: 80%;
+  width: 80%;
+  left: 5%;
 }
