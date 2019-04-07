@@ -5,7 +5,7 @@ function startup() {
     audio: false,
     video: {
       facingMode: { 
-        exact: 'user'
+        exact: 'environment'
       }
     },
     
