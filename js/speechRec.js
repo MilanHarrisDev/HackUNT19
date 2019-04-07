@@ -5,7 +5,7 @@ var text = "";
 let languages = ['en', 'es'];
 let currentLanguage = 1;
 
-
+const Http;
 
 const translateUrl='https://translation.googleapis.com/language/translate/v2';
 
@@ -21,6 +21,12 @@ $( document ).ready(function() {
 
         if(currentLanguage != 0){
             // Translate
+            // Http = new XMLHttpRequest();
+            // Http.open("GET", translateUrl);
+            // Http.send();
+
+            
+
             $.ajax({
                 url: translateUrl,
                 type: "POST",
@@ -36,13 +42,17 @@ $( document ).ready(function() {
                 error:function(error){
                     console.log('Error: ' + error);
                 }
-            })
+            });
         }
         else{
             $('#caption').text(e.results[0][0].transcript);
         }
     });
 });
+
+Http.onreadystatechange=(e)=>{
+    console.log(Http.responseText);
+}
 
 recognition.start();
 
