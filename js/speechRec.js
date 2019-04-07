@@ -26,13 +26,12 @@ $( document ).ready(function() {
             $.ajax({
                 url: createMarkerUrl + 'lat=' + currentPos.coords.latitude + "&long=" + currentPos.coords.longitude + "&msg=" + e.results[0][0].transcript,
                 type: "POST",
-                success: function(result){
-                    $('#caption').text("Marker Created!");
-                    captureMessage = false;
-                },
-                error: function(error){
-                    console.log(error);
-                }
+            }).done(function(result){
+                $('#caption').text("Marker Created!");
+            }).fail(function(error){
+                console.log(error);
+            }).always(function(){
+                captureMessage = false;
             });
         }
         else{
