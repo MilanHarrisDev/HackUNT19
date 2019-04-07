@@ -64,7 +64,7 @@ function openFullscreen() {
 
 /* Close fullscreen */
 function closeFullscreen() {
-  console.log("exitedfullscreen");
+  console.log("exited fullscreen");
   if (document.documentElement.exitFullscreen) {
     document.documentElement.exitFullscreen();
   } else if (document.mozCancelFullScreen) { /* Firefox */
