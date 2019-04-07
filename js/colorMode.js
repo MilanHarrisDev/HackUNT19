@@ -27,7 +27,7 @@ $( document ).ready(function() {
 $( document ).ready(function() {
   $("#contrast-button").click(function() {
     contrastOn = !contrastOn;
-    $(this).text("Contrast: " + (contrastOn?"On":"Off"));
+    $(this).text("Contrast: " + (contrastOn?"Contrast: On":"Contract: Off"));
 
     contrastFilter = (contrastOn?"contrast(150%) brightness(150%)":"contrast(100%) brightness(100%)");
     $("#video").css("filter", contrastFilter + " " + colorFilter);
