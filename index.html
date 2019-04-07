@@ -7,6 +7,9 @@
     
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
   </head>
   <body>
     <svg id='image' version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -82,7 +85,8 @@
     </svg>
     
     <video id="video" autoplay>Video stream is not available.</video>
-    <script async src="js/capture.js"></script>
     <div id="caption">Test text on top of video</div>
+    <script async src="js/capture.js"></script>
+    <script src="js/speechRec.js"></script>
   </body>
 </html>
