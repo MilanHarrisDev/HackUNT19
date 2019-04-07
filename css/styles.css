@@ -25,3 +25,28 @@
   height: auto;
   text-align: center;
 }
+
+#color-mode-button {
+  position: absolute;
+  z-index: 2;
+  background-color: #0000007a;
+  color: white;
+  height: 20pt;
+  font-size: 14pt;
+  outline-color: cyan;
+  outline-width: 3px;
+  align-content: center;
+  width: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  right: 5%;
+  bottom: 5%;
+  height: auto;
+  text-align: center;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
