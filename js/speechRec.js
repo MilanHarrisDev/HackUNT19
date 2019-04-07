@@ -27,6 +27,7 @@ $( document ).ready(function() {
                 type: "POST",
                 success: function(result){
                     $('#caption').text("Marker Created!");
+                    captureMessage = false;
                 },
                 error: function(error){
                     console.log(error);
