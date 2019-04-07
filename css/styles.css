@@ -23,7 +23,7 @@
 }
 
 #buttons-container {
-  position: absolute;
+  position: fixed;
   z-index: 2;
   bottom: 5%;
   right: 5%;
