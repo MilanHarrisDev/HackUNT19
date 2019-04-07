@@ -83,10 +83,15 @@
           0 0 0 1 0"/>
       </filter> 
     </svg>
-    
-    <video id="video" autoplay>Video stream is not available.</video>
-    <div id="caption">Test text on top of video</div>
-    <div id="color-mode-button">Normal</div>
+    <div class="overlay">
+      <video id="video" autoplay>Video stream is not available.</video>
+      <div id="caption">Test text on top of video</div>
+      <div id="buttons-container">
+        <div class="button" id="color-mode-button">Normal</div>
+        <div class="button" id="zoom-button">100%</div>
+      </div>
+    </div>
+   
     <script async src="js/capture.js"></script>
     <script src="js/speechRec.js"></script>
     <script src="js/colorMode.js"></script>
