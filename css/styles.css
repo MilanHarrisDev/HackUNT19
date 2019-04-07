@@ -13,11 +13,15 @@
 
 #caption {
   position: absolute;
+  bottom: 5%;
   color: white;
-  font-size: 24pt;
+  font-size: 14pt;
   text-shadow: 2px 2px #000000;
   z-index: 1;
-  top: 80%;
-  width: 80%;
-  left: 5%;
+  align-content: center;
+  width: auto;
+  margin-left: 10px;
+  margin-right: auto;
+  height: auto;
+  text-align: center;
 }
