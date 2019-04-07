@@ -32,6 +32,9 @@ $( document ).ready(function() {
                 success: function(result){
                     console.log(result.data.translations.translatedText);
                     $('#caption').text(result.data.translations.translatedText);
+                },
+                error:function(error){
+                    console.log('Error: ' + error);
                 }
             })
         }
