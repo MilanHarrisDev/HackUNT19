@@ -35,7 +35,22 @@ function startup() {
 
 window.addEventListener('load', startup, false);
 
-$("#video").click(function openFullscreen() {
+// Fullscreen
+let isfullscreen = false;
+
+$("#fs-button").click(function() {
+  if (!isfullscreen) {
+    openFullscreen();
+  }
+  else {
+    closeFullscreen();
+  }
+  isfullscreen = !isfullscreen;
+});
+
+/* View in fullscreen */
+function openFullscreen() {
+  console.log("fullscreened");
   if (document.documentElement.requestFullscreen) {
     document.documentElement.requestFullscreen();
   } else if (document.documentElement.mozRequestFullScreen) { /* Firefox */
@@ -45,4 +60,18 @@ $("#video").click(function openFullscreen() {
   } else if (document.msRequestFullscreen) { /* IE/Edge */
     document.documentElement.msRequestFullscreen();
   }
-});
+}
+
+/* Close fullscreen */
+function closeFullscreen() {
+  console.log("exitedfullscreen");
+  if (document.documentElement.exitFullscreen) {
+    document.documentElement.exitFullscreen();
+  } else if (document.mozCancelFullScreen) { /* Firefox */
+    document.documentElement.mozCancelFullScreen();
+  } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) { /* IE/Edge */
+    document.documentElement.msExitFullscreen();
+  }
+}
