@@ -33,7 +33,7 @@ $( document ).ready(function() {
                     q: e.results[0][0].transcript,
                     target: languages[currentLanguage]
                 },
-                beforeSend: function(xhr){xhr.setRequestHeader('Authorization', 'Bearer ya29.GlvkBoqRvkM-uKRm1X1WlvdWFbVQiKKsa6d_6eSHmS8ehpJzMau9HLQV6j4-4aOAhuY2hOjQudZlZIFsYrYO1A67CRvl-Y4EVE-YMHKHA9_JrlICE-0G7s4fSQ-Q');},
+                beforeSend: function(xhr){xhr.setRequestHeader('Authorization', 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjZmNjc4MWJhNzExOTlhNjU4ZTc2MGFhNWFhOTNlNWZjM2RjNzUyYjUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI4OTY0NzYwNTgyMzAtcWZlNnEwZGo4cm5qcGQxaWdqbmZmYWIzY243MGVsYTYuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI4OTY0NzYwNTgyMzAtcWZlNnEwZGo4cm5qcGQxaWdqbmZmYWIzY243MGVsYTYuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTE2NzQwNzEzODEyNzAyNDkwNzkiLCJlbWFpbCI6ImxhYnVzYWlkQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiZFU4ODVnSXlwbXdzVXd5T2FFcUFhQSIsImlhdCI6MTU1NDYwODU0MSwiZXhwIjoxNTU0NjEyMTQxfQ.Inm663gJ-f9-R96jS2KhJzSwqv5t3vpgSo6TsNxndubGeuFJFrdZ91SHaoG0CAdeqBpkdHWszkbcPcrD7wYgqpITkqgExPHbDajivm9e2Evap8l5sCoXHmN-Xbf2f_V0Sva05JfnkUIY_eTKIevIiWvAELoc46t2iUgG76LZhH5dzJz75EZxO5U2YVBdceNzfNOrvioyBF2VmCVOPo4YNkS9s2dKCwMYvEqhxMVZ97yw6CRLNriIBxz7L6o4yKzi-lLcM2jYd0fWlXreTjID9JAa2yAKN5BpeS0eTo-TU3Lt1Q136XTQWrZ9VAkTP9vdl_kj5jswN5v0TsfAfuHlkQ');},
                 success: function(result){
                     console.log(result.data.translations.translatedText);
                     $('#caption').text(result.data.translations.translatedText);
