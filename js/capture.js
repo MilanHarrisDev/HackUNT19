@@ -5,7 +5,7 @@ function startup() {
     audio: false,
     video: true,
     facingMode: { 
-      exact: 'environment'
+      exact: 'user'
     }
   }).then(stream => {
     video.srcObject = stream;
