@@ -21,6 +21,7 @@ $( document ).ready(function() {
 
     recognition.addEventListener("result", e => {
         if(captureMessage){
+            $('#caption').text("Location detected!");
             console.log("latitude: " + currentPos.coords.latitude + ", Longitude: " + currentPos.coords.longitude);
             $.ajax({
                 url: createMarkerUrl + 'lat=' + currentPos.coords.latitude + "&long=" + currentPos.coords.longitude + "&msg=" + e.results[0][0].transcript,
