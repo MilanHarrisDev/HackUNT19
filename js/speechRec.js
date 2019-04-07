@@ -49,10 +49,6 @@ $( document ).ready(function() {
     });
 });
 
-Http.onreadystatechange=(e)=>{
-    console.log(Http.responseText);
-}
-
 recognition.start();
 
 recognition.addEventListener("end", recognition.start);
